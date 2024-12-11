@@ -5,8 +5,6 @@ import requests
 import datetime
 import os
 
-from keep_alive import keep_alive
-keep_alive()
 # insert your Telegram bot tokSasen here
 bot = telebot.TeleBot('7739732139:AAGKz7Adx2exNwV0ElD1_PB7q-eHjPmNdk4')
 

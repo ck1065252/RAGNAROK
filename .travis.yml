@@ -7,7 +7,7 @@ before_install:
   - sudo apt-get update
 
 install:
-  - python3 -m pip install --upgrade pip pyTelegramBotAPI asyncio python-telegram-bot
+  - python3 -m pip install --upgrade pip pyTelegramBotAPI asyncio python-telegram-bot Flask
   - python3 -m pip install telebot pymongo aiohttp
 
 script:

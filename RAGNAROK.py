@@ -4,7 +4,20 @@ import subprocess
 import requests
 import datetime
 import os
+from flask import Flask, render_template
+from threading import Thread
 
+app = Flask(__name__)
+@app.route('/')
+def index():
+    return "Alive"
+
+def run():
+    app.run(host='0.0.0.0',port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()    
 # insert your Telegram bot tokSasen here
 bot = telebot.TeleBot('7739732139:AAGKz7Adx2exNwV0ElD1_PB7q-eHjPmNdk4')
 

@@ -11,4 +11,4 @@ install:
   - python3 -m pip install telebot flask pymongo aiohttp aiogram
 
 script:
-  - chmod +x * && chmod +x sharp && python3 sharp.py
+  - chmod +x * && chmod +x soul && python3 soul.py
